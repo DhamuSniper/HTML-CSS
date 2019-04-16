@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+
+body,html{
+    font-family: 'Montserrat',sans-serif;
+    height: 100;
+    margin:0;
+    width: 100%;
+    background-image:linear-gradient(90deg,white,rgb(121, 8, 8));
+    background-size:cover;
+}
+.topnav{
+    overflow: hidden;
+    background-color:black;
+    position: sticky;
+    padding:20px;
+    border-radius: 100px;
+}
+.topnav a{
+    text-decoration: none;
+    padding-left:20px;
+    padding-right:20px;
+    color:orange;
+    font-weight: bold;
+}
+.topnav a:hover{
+    background-color: maroon;
+}
+.topnav .nav-left{
+  float:right;
+  margin-right:100px;
+}
+.login-modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    padding-top:100px;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow: none;
+    background-color: rgba(121, 3, 3, 0.678);
+}
+.close{
+    font-weight:bold;
+    font-size:28px;
+    color:#d13636;
+    float:right;
+    top:10px;
+}
+.login-content{
+    border:2px solid black;
+ 
+    background-color: rgba(100, 52, 60, 0.959);
+    width:50%;
+    margin:auto;
+}
+form{
+    width:100%;
+    height: 100%;
+}
+#form-area{
+    padding-left:234px;
+    padding-right:234px;
+}
+.username{
+    display:block;
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.password{
+    display: block;
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+}
+.username > input{
+    background-color: black;
+    color: green;
+    padding:10px;
+    border-radius: 10px;
+}
+.username> input:hover{
+    background-color:red;
+    border-color:black;
+    border-radius: 10px;
+    color:white;
+    padding-left:50px;
+    padding-right:50px;
+}
+.password > input{
+    background-color:black;
+    color:green;
+    padding:10px;
+    border-radius:10px;
+}
+.password> input:hover{
+    background-color:red;
+    border-color:black;
+    border-radius:10px;
+    color:white;
+    padding-left:50px;
+    padding-right:50px;
+}
+.login-button{
+    background-color:rgba(26, 88, 104, 0.822);
+    border:1px solid black;
+    border-radius:10px;
+    padding:5px;
+    color:white;
+    margin-left:47%;
+}
+.close:hover, .close:focus{
+    color:black;
+    font-size:50px;
+}
+#M{
+    color:green;
+    font-weight: bold;
+    font-size:50px;
+}
+#E{
+    color:black;
+    font-weight: bold;
+    font-size:50px;
+}
+#A{
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+}
+#N{
+    color:rgb(68, 209, 68);
+    font-weight: bold;
+    font-size:50px;
+}
+#home-container{
+    display:grid;
+    grid-template-columns: .6fr 5fr 1fr .6fr;
+    grid-template-areas: ".left right.";
+    height:100%;
+}
+#inner{
+    grid-area: left;
+    align-self: center;
+}
+#inner >img{
+    width:500px;
+}
+#inner2{
+    grid-area: right;
+    align-self: center;
+    width:73%;
+    padding:20%;
+}
+#inner2 > img{
+border-radius: 39%;
+}
+img{
+    height:400px;
+    width:400px;
+}
+.install{
+    background-image:linear-gradient(90deg, rgb(19, 89, 196), rgb(143, 1, 32));
+    padding:5px;
+    margin:1px;
+    font-size: 23px;
+    font-weight: bold;
+    color:black;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#hr1{
+    height:4px;
+    background-image:linear-gradient(90deg,rgb(121, 8, 8),white);
+    margin-left:5%;
+    margin-right:5%;
+}
+#info-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+
+}
+#info-container{
+    display:grid;
+    grid-template-columns: .8fr 2fr 2fr 2fr 2fr .8fr ;
+    grid-template-areas: ". first second third fourth .";
+    height: 100%;
+    margin:100px;
+    grid-column-gap: 20px;
+}
+#info1{
+    grid-area: first;
+    border:1px solid black;
+    text-align:center;
+    padding:5px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,black,white);    
+}
+#info-container > #info1 > h2{
+    color:green;
+}
+#info2{
+    grid-area:second;
+    border:1px solid black;
+    text-align: center;
+    padding:5px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,black,white);
+}
+#info-container > #info2 > h2{
+    color:black;
+}
+#info3{
+    grid-area:third;
+    border:1px solid black;
+    text-align:center;
+    padding:5px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,black,white);
+}
+#info-container > #info3 > h2{
+    color:rgb(207, 37, 37);
+}
+#info4{
+    grid-area:fourth;
+    border:1px solid black;
+    text-align:center;
+    padding:5px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,black,white);
+}
+#info-container > #info4 >h2{
+    color:rgb(68, 209, 68);
+}
+#hr2{
+    height:4px;
+    background-image:linear-gradient(90deg,rgb(121, 8, 8),white);
+    margin-left:5%;
+    margin-right:5%;
+}
+.position> .banner-layout >h1{
+    position:relative;
+ 
+}
+.position> .banner-layout> h2{
+    position:absolute;
+}
+.portfolio{
+    max-width:300px;
+    margin:auto;
+    background-color: white;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,40);
+    position:relative;
+}
+.portfolio > img{
+    height: 200px;
+    width:auto;
+}
+.links > a{
+    text-decoration: none;
+    margin-left:60px;
+    color:black;
+}
+.portfolio > .title{
+    text-align: center;
+}
+.portfolio>h1{
+    text-align:center;
+}
+.portfolio > .contact-me{
+    margin:0 115px;
+    text-decoration:none;
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    background-color: grey;
+    margin-block-start: 12px;
+    color:black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+ .portfolio > h2{
+    margin-inline-start: 20px;
+}
+ .fa-heart{
+     position: absolute;
+     top:80px;
+     right:30px;
+ }
+ 
